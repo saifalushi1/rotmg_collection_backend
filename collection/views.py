@@ -19,8 +19,8 @@ class MomentList(generics.RetrieveUpdateDestroyAPIView):
     serializer_class = MomentSerializer
 
 class PhotoCreate(generics.ListCreateAPIView):
-    queryset = Moment.objects.all()
-    serializer_class = MomentSerializer
+    queryset = Photo.objects.all()
+    serializer_class = PhotoSerializer
 
 class PhotoList(generics.RetrieveUpdateDestroyAPIView):
     queryset = Photo.objects.all()
